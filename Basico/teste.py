@@ -1,7 +1,8 @@
-numero = int(input("Digite um numero inteiro: "))
-
-if numero %2 == 0:
-  print("O numero é par")
-  
-else:
-  print("O número é impar")
+class Foo: 
+  def hello(self): 
+    print(self.__class__.__name__.lower()) 
+class Bar(Foo): 
+  def hello(self): 
+    return super().hello() 
+bar = Bar() 
+bar.hello()

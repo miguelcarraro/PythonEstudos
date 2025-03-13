@@ -24,7 +24,7 @@ print("Vou destruir a instancia")
 
 print("Ainda não destrui")
 
-del c2
+del c2 # Forçando a instância a terminar primeiro.
 
 print("Agora destrui")
 
